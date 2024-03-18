@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Program JavaScript dengan var, let, dan const</title>
+</head>
+<body>
+
+<!-- Elemen HTML untuk menampilkan hasil -->
+<div id="output"></div>
+
+<!-- Kode JavaScript -->
+<script>
+// Program menggunakan variabel var
+var x = 10;
+function displayVar() {
+    var x = 20;
+    document.getElementById("output").innerHTML += "Program menggunakan variabel var:<br>Nilai x dalam fungsi: " + x + "<br>";
+}
+displayVar();
+document.getElementById("output").innerHTML += "Nilai x di luar fungsi: " + x + "<br><br>";
+
+// Program menggunakan variabel let
+let y = 10;
+function displayLet() {
+    let y = 20;
+    document.getElementById("output").innerHTML += "Program menggunakan variabel let:<br>Nilai y dalam fungsi: " + y + "<br>";
+}
+displayLet();
+document.getElementById("output").innerHTML += "Nilai y di luar fungsi: " + y + "<br><br>";
+
+// Program menggunakan variabel const
+const z = 10;
+function displayConst() {
+    // Tidak bisa mengubah nilai variabel const, baris ini akan menghasilkan error
+    // z = 20;
+    document.getElementById("output").innerHTML += "Program menggunakan variabel const:<br>Nilai z dalam fungsi: " + z + "<br>";
+}
+displayConst();
+document.getElementById("output").innerHTML += "Nilai z di luar fungsi: " + z + "<br>";
+</script>
+
+</body>
+</html>
